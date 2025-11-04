@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffdf9; /* soft cream */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #d1f0e1; /* mint lembut */
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .logo span {
+  color: #6cbf9b; /* aksen hijau */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #6cbf9b;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #fef9f2, #d1f0e1, #cce7f9); /* cream → mint → soft blue */
+  color: #333;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 span {
+  color: #6cbf9b; 
+}
+
+.btn {
+  background-color: #6cbf9b;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5aa885;
+}
+
+/* About Section */
+.about {
+  background: #fff2e8; /* peach lembut */
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+  background: #e6f7ff; /* biru langit lembut */
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #fffdf9; /* cream lembut */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  color: #6cbf9b;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff2e8; /* peach lembut */
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background: #d1f0e1; /* mint lembut */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
